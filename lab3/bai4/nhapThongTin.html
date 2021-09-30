@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="vi-VN">
+    <meta charset="UTF-8">
+
+    <style>
+        body {
+            background-color: linen;
+        }
+
+        table {
+            border: 1px solid black;
+            width: 50%;
+            height: 60%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="xulyThongtin.php" method="POST">
+        <table>
+            <tr>
+                <td><label for="hoten">Họ tên: </label></td>
+                <td><input type="text" name="hoten" id="hoten"></td>
+            </tr>
+            <tr>
+                <td><label for="diachi">Địa chỉ: </label></td>
+                <td><input type="text" name="diachi" id="diachi"></td>
+            </tr>
+            <tr>
+                <td><label for="sdt">Số điện thoại: </label></td>
+                <td><input type="text" name="sdt" id="sdt"></td>
+            </tr>
+            <tr>
+                <td><label for="gt">giới tính </label></td>
+                <td><input type="radio" name="gt" id="gt" value="nam">Nam <input type="radio" name="gt" id="gt"
+                        value="nu">Nữ</td>
+            </tr>
+            <tr>
+                <td> <label for="quoctich">Quốc tịch </label></td>
+                <td>
+                    <input list="quoctich" name="quoctich">
+                    <datalist id="quoctich">
+                        <option value="Việt Nam">
+                        <option value="Lào">
+                        <option value="Campuchia">
+                        <option value="Singapo">
+                        <option value="Urana">
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mh">Các môn đã học</label></td>
+                <td><input type="checkbox" id="mh1" name="mh1" value="PHP & SQL">
+                    <label for="mh1"> PHP & SQL</label><br>
+                    <input type="checkbox" id="mh2" name="mh2" value="C#">
+                    <label for="mh2"> C#</label><br>
+                    <input type="checkbox" id="mh3" name="mh3" value="XML">
+                    <label for="mh3"> XML</label><br><br>
+                    <input type="checkbox" id="mh4" name="mh4" value="PYTHON">
+                    <label for="mh4"> PYTHON</label><br><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="ghichu">Ghi chú</label></td>
+                <td><textarea name="ghichu" id="ghichu" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Gửi"></td>
+                <td><input type="reset" value="Hủy"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
